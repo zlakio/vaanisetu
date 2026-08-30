@@ -54,7 +54,8 @@ print(f"  Lesson loaded: '{lesson['title']}' ({sess.total_steps} steps)")
 
 print("\nTest 6: Session tracking and comprehension signal")
 sess.record_translation("तीन और चार", santali, 1.2)
-sess.advance_step()
+for _ in range(sess.total_steps):
+    sess.advance_step()
 signal = sess.record_student_response("7")
 print(f"  Response '7' → signal: {signal}")
 assert signal == "green", f"Expected green, got {signal}"
