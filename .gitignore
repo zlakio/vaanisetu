@@ -6,3 +6,15 @@ __pycache__/
 *.pdf
 .env
 vaanisetu_env/
+# Android Studio / Gradle
+.gradle/
+.idea/
+local.properties
+*.iml
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab

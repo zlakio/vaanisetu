@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D2137">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VaaniSetu"
+            android:textSize="26sp" android:textColor="#FAC040"
+            android:textStyle="bold" android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Teaching Assistant for Tribal Classrooms"
+            android:textSize="12sp" android:textColor="#AED6F1"
+            android:gravity="center" android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT LESSON" android:textSize="10sp"
+            android:textColor="#FAC040" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/lessonSpinner"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:background="#1A5276" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTENT MODE" android:textSize="10sp"
+            android:textColor="#FAC040" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/modeSpinner"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:background="#1A5276" android:layout_marginBottom="16dp"/>
+
+        <TextView android:id="@+id/stepText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start a lesson to begin"
+            android:textSize="11sp" android:textColor="#AED6F1"
+            android:padding="10dp" android:background="#1A5276"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready" android:textSize="13sp"
+            android:textColor="#A9DFBF" android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HINDI" android:textSize="9sp"
+            android:textColor="#FAC040" android:textStyle="bold"
+            android:layout_marginBottom="2dp"/>
+        <TextView android:id="@+id/hindiText"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:hint="Hindi text appears here" android:textColorHint="#7FB3D3"
+            android:textColor="#FFFFFF" android:textSize="13sp"
+            android:padding="10dp" android:background="#1A5276"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SANTALI (ᱥᱟᱱᱛᱟᱲᱤ)" android:textSize="9sp"
+            android:textColor="#FAC040" android:textStyle="bold"
+            android:layout_marginBottom="2dp"/>
+        <TextView android:id="@+id/santaliText"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:hint="Santali translation appears here"
+            android:textColorHint="#7DCEA0"    android:textColor="#FFFFFF"
+            android:textSize="13sp" android:padding="10dp"
+            android:background="#0D6B3E" android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/latencyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" android:textSize="11sp"
+            android:textColor="#FAC040" android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:id="@+id/comprehensionSignal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="" android:textSize="14sp"
+            android:textColor="#FFFFFF" android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/recordButton"
+            android:layout_width="match_parent" android:layout_height="72dp"
+            android:text="HOLD TO SPEAK (Hindi)"
+            android:textSize="15sp"    android:textColor="#FFFFFF"
+            android:backgroundTint="#C0392B"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/nextStepButton"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="NEXT STEP"
+            android:textSize="13sp"    android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/studentResponseInput"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:hint="Type student response here (for assessment)"
+            android:textColorHint="#7FB3D3"    android:textColor="#FFFFFF"
+            android:background="#1A5276" android:padding="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/submitResponseButton"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="CHECK RESPONSE"
+            android:textSize="12sp"    android:textColor="#FFFFFF"
+            android:backgroundTint="#0D6B3E"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <Button android:id="@+id/worksheetButton"
+                android:layout_width="0dp" android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="WORKSHEET"
+                android:textSize="12sp"    android:textColor="#FFFFFF"
+                android:backgroundTint="#1A5276"
+                android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/summaryButton"
+                android:layout_width="0dp" android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="SESSION SUMMARY"
+                android:textSize="12sp"    android:textColor="#FFFFFF"
+                android:backgroundTint="#0D2137"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/summaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" android:textSize="11sp"
+            android:textColor="#AED6F1"
+            android:padding="12dp" android:background="#1A5276"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
