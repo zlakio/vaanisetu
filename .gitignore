@@ -7,9 +7,6 @@ __pycache__/
 .env
 vaanisetu_env/
 # Android Studio / Gradle
-.gradle/
-.idea/
-local.properties
 *.iml
 .DS_Store
 build/

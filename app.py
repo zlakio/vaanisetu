@@ -4,7 +4,12 @@ import os
 import tempfile
 import time
 
-from flask import Flask, jsonify, request, send_file
+from flask import (
+    Flask,
+    jsonify,
+    request,
+    send_file,
+)
 from flask_cors import CORS
 
 import database
@@ -12,10 +17,17 @@ from lesson_engine import LessonSession, get_all_lessons, get_lesson
 from pipeline import VaaniSetuPipeline
 from worksheet import generate_bilingual_worksheet
 
+app = Flask(__name__, static_folder=".", static_url_path="")
+
 app = Flask(__name__)
 CORS(app)
 pl = VaaniSetuPipeline()
 sessions = {}
+
+
+@app.route("/")
+def index():
+    return send_file("frontend.html")
 
 
 @app.route("/health")
