@@ -136,6 +136,4 @@ VaaniSetu/                # Android Studio project (Kotlin)
 
 ---
 
-## License
 
-_Add a license if required for SIH submission._
